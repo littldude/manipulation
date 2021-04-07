@@ -211,6 +211,7 @@ button:focus {
         text-align: center;
     }
     &--bg {
+        padding: 0 8px;
         background-color: $pink;
         border-radius: 45px;
     }
@@ -227,7 +228,6 @@ button:focus {
         }
     }
     &--bold {
-        padding: 0 8px;
         font-weight: 700;
     }
     &--price {
@@ -300,6 +300,7 @@ button:focus {
     &--white {
         &::before {
             border: 1px solid #FFFFFF;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
     }
     &--center {
@@ -562,6 +563,8 @@ button:focus {
     }
 }
 .buy {
+    position: relative;
+    z-index: -1;
     background-color: $dark;
     padding: 60px 0 75px 0;
     &__inner {
@@ -597,6 +600,7 @@ button:focus {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         small {
             letter-spacing: 0.03em;
             margin-bottom: 10px;
@@ -920,11 +924,11 @@ button:focus {
             }
         }
     }
-    .buy {
-        &__small {
-            align-items: flex-start;
-        }
-    }
+    // .buy {
+    //     &__small {
+    //         align-items: flex-start;
+    //     }
+    // }
     .footer {
         &__inner {
             &--text {
