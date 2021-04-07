@@ -304,6 +304,9 @@ button:focus {
   border-radius: 100%;
   cursor: pointer;
 }
+.open:hover {
+  background-color: #F87BDC;
+}
 .open span {
   position: relative;
   display: flex;

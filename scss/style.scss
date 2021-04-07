@@ -318,6 +318,9 @@ button:focus {
     border: none;
     border-radius: 100%;
     cursor: pointer;
+    &:hover {
+        background-color: #F87BDC;
+    }
     span {
         position: relative;
         display: flex;
