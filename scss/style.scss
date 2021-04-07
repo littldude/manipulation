@@ -227,6 +227,7 @@ button:focus {
         }
     }
     &--bold {
+        padding: 0 8px;
         font-weight: 700;
     }
     &--price {
@@ -270,6 +271,10 @@ button:focus {
     font-size: 22px;
     font-family: 'Geometria';
     border: none;
+    &:hover {
+        background-color: #F87BDC;
+        transition: .2s linear;
+    }
     &--dark,
     &--white {
         &::before {
@@ -985,6 +990,9 @@ button:focus {
                 width: 120px;
             }
         }
+        &--bg {
+            padding: 0 5px;
+        }
     }
     .title {
         font-size: 32px;
@@ -1049,7 +1057,7 @@ button:focus {
     .program {
         padding: 50px 0 55px 0;
         &__inner {
-            padding: 0 1%;
+            padding: 0 3%;
             margin-top: 40px;
             &--item {
                 width: 75%;

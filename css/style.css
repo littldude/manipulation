@@ -220,6 +220,7 @@ button:focus {
   margin-bottom: 0;
 }
 .text--bold {
+  padding: 0 8px;
   font-weight: 700;
 }
 .text--price {
@@ -263,6 +264,10 @@ button:focus {
   font-size: 22px;
   font-family: "Geometria";
   border: none;
+}
+.button:hover {
+  background-color: #F87BDC;
+  transition: 0.2s linear;
 }
 .button--dark::before, .button--white::before {
   content: "";
@@ -860,6 +865,9 @@ button:focus {
     top: 46%;
     width: 120px;
   }
+  .text--bg {
+    padding: 0 5px;
+  }
 
   .title {
     font-size: 32px;
@@ -918,7 +926,7 @@ button:focus {
     padding: 50px 0 55px 0;
   }
   .program__inner {
-    padding: 0 1%;
+    padding: 0 3%;
     margin-top: 40px;
   }
   .program__inner--item {
