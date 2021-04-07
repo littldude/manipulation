@@ -520,12 +520,12 @@ button:focus {
 }
 
 .buy {
-  position: relative;
-  z-index: -1;
   background-color: #252B31;
   padding: 60px 0 75px 0;
 }
 .buy__inner {
+  z-index: 0;
+  position: relative;
   margin-top: 40px;
 }
 .buy__inner--currency {

@@ -563,11 +563,13 @@ button:focus {
     }
 }
 .buy {
-    position: relative;
-    z-index: -1;
+    // position: relative;
+    // z-index: -1;
     background-color: $dark;
     padding: 60px 0 75px 0;
     &__inner {
+        z-index: 0;
+        position: relative;
         margin-top: 40px;
         &--currency {
             font-family: 'Geometria';
