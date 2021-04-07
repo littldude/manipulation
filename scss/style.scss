@@ -302,28 +302,32 @@ button:focus {
     }
 }
 .open {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 56px;
     height: 56px;
-    background-color: $dark;
+    background-color: $pink;
     transition: .3s linear;
     border: none;
     border-radius: 100%;
     cursor: pointer;
     span {
         position: relative;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 37px;
         height: 1px;
         background-color: #ffffff;
-        transform: rotate(45deg);
+        // transform: rotate(45deg);
         transition: .3s linear;
         &::after {
-            position: absolute;
+            // position: absolute;
             content: '';
-            top: -19px;
-            left: 50%;
-            transform: translateX(-50%);
+            // top: -19px;
+            // left: 50%;
+            // transform: translateX(-50%);
             display: block;
             height: 37px;
             width: 1px;
@@ -332,9 +336,9 @@ button:focus {
         }
     }
     &--rotate {
-        background-color: $pink;
+        background-color: $dark;
         span {
-            transform: rotate(90deg);
+            transform: rotate(45deg);
             transition: .3s linear;
             &::after {
                 transition: .3s linear;
@@ -806,7 +810,7 @@ button:focus {
             width: 27px;
             &::after {
                 height: 27px;
-                transform: translate(0, 6px);
+                // transform: translate(0, 6px);
             }
         }
     }
@@ -938,8 +942,8 @@ button:focus {
             width: 19px;
             &::after {
                 height: 19px;
-                left: 49%;
-                transform: translate(0, 50%);
+                // left: 49%;
+                // transform: translate(0, 50%);
             }
         }
     }
@@ -1043,6 +1047,7 @@ button:focus {
     .program {
         padding: 50px 0 55px 0;
         &__inner {
+            padding: 0 1%;
             margin-top: 40px;
             &--item {
                 width: 75%;
